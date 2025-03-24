@@ -1,10 +1,42 @@
+[Rule]
+# 📌 抖音主域名
 DOMAIN-SUFFIX,douyin.com,PROXY
-DOMAIN-SUFFIX,amemv.com,PROXY
-DOMAIN-SUFFIX,ibytedtos.com,PROXY
-DOMAIN-SUFFIX,tiktokcdn.com,PROXY
-DOMAIN-SUFFIX,byteoversea.com,PROXY
-DOMAIN-SUFFIX,bytedance.com,PROXY
+DOMAIN-SUFFIX,douyinpic.com,PROXY
+DOMAIN-SUFFIX,douyincdn.com,PROXY
+DOMAIN-SUFFIX,douyinstatic.com,PROXY
+
+# 📌 抖音 API 服务器
+DOMAIN,api.douyin.com,PROXY
+DOMAIN,api.amemv.com,PROXY
+DOMAIN,aweme.snssdk.com,PROXY
+
+# 📌 抖音视频 & CDN 资源
+DOMAIN-SUFFIX,bytecdn.cn,PROXY
 DOMAIN-SUFFIX,byteimg.com,PROXY
-DOMAIN-SUFFIX,ipstatp.com,PROXY
-DOMAIN-SUFFIX,pstatp.com,PROXY
-DOMAIN-SUFFIX,iesdouyin.com,PROXY
+DOMAIN-SUFFIX,byted-static.com,PROXY
+DOMAIN-SUFFIX,ibytedapm.com,PROXY
+DOMAIN-SUFFIX,byteoversea.com,PROXY
+DOMAIN-SUFFIX,bytedns.net,PROXY
+
+# 📌 抖音直播
+DOMAIN-SUFFIX,douyinlive.com,PROXY
+DOMAIN-SUFFIX,douyinlivestream.com,PROXY
+DOMAIN-SUFFIX,douyinlog.com,PROXY
+
+# 📌 抖音广告相关
+DOMAIN-SUFFIX,ad.douyin.com,PROXY
+DOMAIN-SUFFIX,log.snssdk.com,PROXY
+DOMAIN-SUFFIX,mon.snssdk.com,PROXY
+
+# 📌 抖音客服支持
+DOMAIN-SUFFIX,support.douyin.com,PROXY
+DOMAIN-SUFFIX,help.douyin.com,PROXY
+
+# 📌 抖音 WebSocket 连接
+DOMAIN,wss://webcast.douyin.com,PROXY
+DOMAIN,wss://webcast.amemv.com,PROXY
+
+# 📌 兜底规则（强制代理所有 Douyin 相关流量）
+USER-AGENT,*Douyin*,PROXY
+USER-AGENT,*Aweme*,PROXY
+
