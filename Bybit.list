@@ -1,0 +1,46 @@
+# 📌 Bybit 主域名
+DOMAIN-SUFFIX,bybit.com,PROXY
+DOMAIN-SUFFIX,bybit.me,PROXY
+DOMAIN-SUFFIX,bytick.com,PROXY
+DOMAIN,www.bybit.com,PROXY
+
+# 📌 Bybit API 服务器
+DOMAIN,api.bybit.com,PROXY
+DOMAIN,api2.bybit.com,PROXY
+DOMAIN,api.bytick.com,PROXY
+
+# 📌 Bybit 交易相关
+DOMAIN,trade.bybit.com,PROXY
+DOMAIN,futures.bybit.com,PROXY
+DOMAIN,margin.bybit.com,PROXY
+DOMAIN,spot.bybit.com,PROXY
+DOMAIN,derivatives.bybit.com,PROXY
+
+# 📌 Bybit 账户管理
+DOMAIN,account.bybit.com,PROXY
+DOMAIN,kyc.bybit.com,PROXY
+DOMAIN,auth.bybit.com,PROXY
+
+# 📌 Bybit 钱包 / 资金流动
+DOMAIN,wallet.bybit.com,PROXY
+DOMAIN,pay.bybit.com,PROXY
+
+# 📌 Bybit WebSocket 连接
+DOMAIN,wss://stream.bybit.com,PROXY
+DOMAIN,wss://stream.bytick.com,PROXY
+
+# 📌 Bybit CDN 资源
+DOMAIN-SUFFIX,bybit-cdn.com,PROXY
+DOMAIN-SUFFIX,bybit-resources.com,PROXY
+
+# 📌 Bybit KYC 认证
+DOMAIN-SUFFIX,jumio.com,PROXY
+DOMAIN-SUFFIX,onfido.com,PROXY
+
+# 📌 Bybit 客服支持
+DOMAIN,support.bybit.com,PROXY
+DOMAIN,help.bybit.com,PROXY
+
+# 📌 兜底规则（确保所有 Bybit 相关流量走代理）
+USER-AGENT,*Bybit*,PROXY
+DOMAIN-KEYWORD,bybit,PROXY
