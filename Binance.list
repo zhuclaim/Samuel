@@ -13,33 +13,57 @@ DOMAIN-SUFFIX,binance.plus,PROXY
 DOMAIN-SUFFIX,binance.cc,PROXY
 DOMAIN-SUFFIX,binance.exchange,PROXY
 DOMAIN-KEYWORD,binance,PROXY
+
+# API 服务器
 DOMAIN,api.binance.com,PROXY
 DOMAIN,api.binance.net,PROXY
 DOMAIN,api.binance.org,PROXY
 DOMAIN,api.binance.us,PROXY
+
+# WebSocket 服务器
 DOMAIN,wss://stream.binance.com,PROXY
 DOMAIN,wss://stream.binance.net,PROXY
 DOMAIN,wss://stream.binance.us,PROXY
+
+# Binance 官方钱包
 DOMAIN,wallet.binance.com,PROXY
 DOMAIN,wallet.binance.net,PROXY
+
+# Binance Staking
 DOMAIN,staking.binance.com,PROXY
 DOMAIN,staking.binance.net,PROXY
+
+# Binance 交易相关
 DOMAIN,trade.binance.com,PROXY
 DOMAIN,trade.binance.net,PROXY
 DOMAIN,futures.binance.com,PROXY
 DOMAIN,futures.binance.net,PROXY
 DOMAIN,margin.binance.com,PROXY
 DOMAIN,margin.binance.net,PROXY
+
+# Binance 云计算服务
 DOMAIN-SUFFIX,binance.cloud,PROXY
+
+# Binance 国际站
 DOMAIN,www.binance.com,PROXY
 DOMAIN,www.binance.net,PROXY
 DOMAIN,www.binance.org,PROXY
 DOMAIN,www.binance.us,PROXY
+
+# Binance 官方CDN
 DOMAIN-SUFFIX,binance-static.com,PROXY
 DOMAIN-SUFFIX,binance-resources.com,PROXY
+
+# Binance KYC / 认证相关
 DOMAIN-SUFFIX,jumio.com,PROXY
 DOMAIN-SUFFIX,sums.subscan.io,PROXY
 DOMAIN-SUFFIX,certik.com,PROXY
+
+# Binance 客服支持
 DOMAIN,cs.binance.com,PROXY
 DOMAIN,cs.binance.net,PROXY
+
+
+# 兜底规则（强制代理所有 Binance 相关流量）
 USER-AGENT,*Binance*,PROXY
+
