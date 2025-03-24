@@ -1,4 +1,46 @@
-DOMAIN-SUFFIX,wise.com
-DOMAIN-SUFFIX,transferwise.com
-DOMAIN-KEYWORD,wise
-DOMAIN-KEYWORD,transferwise
+[Rule]
+# Wise 官方网站
+DOMAIN-SUFFIX,wise.com,PROXY
+DOMAIN,www.wise.com,PROXY
+
+# Wise API 服务器
+DOMAIN,api.wise.com,PROXY
+DOMAIN,transferwise.com,PROXY
+DOMAIN,api.transferwise.com,PROXY
+
+# Wise 账户管理
+DOMAIN,account.wise.com,PROXY
+DOMAIN,profile.wise.com,PROXY
+DOMAIN,verification.wise.com,PROXY
+
+# Wise 交易服务
+DOMAIN,send.wise.com,PROXY
+DOMAIN,receive.wise.com,PROXY
+DOMAIN,fx.wise.com,PROXY
+DOMAIN,card.wise.com,PROXY
+
+# Wise 连接银行服务
+DOMAIN-SUFFIX,plaid.com,PROXY
+DOMAIN-SUFFIX,trustly.com,PROXY
+
+# Wise WebSocket 连接
+DOMAIN,wss://ws.wise.com,PROXY
+DOMAIN,wss://ws.transferwise.com,PROXY
+
+# Wise 客服支持
+DOMAIN,support.wise.com,PROXY
+DOMAIN,help.wise.com,PROXY
+
+# Wise KYC 验证（身份认证）
+DOMAIN-SUFFIX,jumio.com,PROXY
+DOMAIN-SUFFIX,onfido.com,PROXY
+DOMAIN,kyc.wise.com,PROXY
+
+# Wise CDN 加速资源
+DOMAIN-SUFFIX,wise-cdn.com,PROXY
+DOMAIN-SUFFIX,wise-resources.com,PROXY
+
+
+# 兜底规则（强制代理所有 Wise 相关流量）
+USER-AGENT,*Wise*,PROXY
+USER-AGENT,*TransferWise*,PROXY
