@@ -1,4 +1,3 @@
-[Rule]
 # Wise 官方网站
 DOMAIN-SUFFIX,wise.com,PROXY
 DOMAIN,www.wise.com,PROXY
@@ -39,7 +38,6 @@ DOMAIN,kyc.wise.com,PROXY
 # Wise CDN 加速资源
 DOMAIN-SUFFIX,wise-cdn.com,PROXY
 DOMAIN-SUFFIX,wise-resources.com,PROXY
-
 
 # 兜底规则（强制代理所有 Wise 相关流量）
 USER-AGENT,*Wise*,PROXY
