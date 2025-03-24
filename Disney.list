@@ -1,0 +1,41 @@
+# 📌 Disney+ 主要域名
+DOMAIN-SUFFIX,disneyplus.com,PROXY
+DOMAIN-SUFFIX,disneystreaming.com,PROXY
+DOMAIN,www.disneyplus.com,PROXY
+
+# 📌 Disney+ API 服务器
+DOMAIN,api.disneyplus.com,PROXY
+DOMAIN,disney.api.edge.bamgrid.com,PROXY
+DOMAIN,disney.api.edge.bamgrid.com,PROXY
+
+# 📌 Disney+ CDN 资源
+DOMAIN-SUFFIX,disneypluscdn.com,PROXY
+DOMAIN-SUFFIX,disneystreaming.com,PROXY
+DOMAIN-SUFFIX,bamgrid.com,PROXY
+
+# 📌 Disney+ 账号管理
+DOMAIN,account.disneyplus.com,PROXY
+DOMAIN,login.disneyplus.com,PROXY
+DOMAIN,secure.disneyplus.com,PROXY
+
+# 📌 Disney+ 直播 & 视频流
+DOMAIN-SUFFIX,media.disneyplus.com,PROXY
+DOMAIN-SUFFIX,cdn.registerdisney.go.com,PROXY
+DOMAIN-SUFFIX,cdnapisec.kaltura.com,PROXY
+
+# 📌 Disney+ 认证 & 许可验证
+DOMAIN,disney.playback.edge.bamgrid.com,PROXY
+DOMAIN,disney.auth.edge.bamgrid.com,PROXY
+
+# 📌 Disney+ 客服支持
+DOMAIN,support.disneyplus.com,PROXY
+DOMAIN,help.disneyplus.com,PROXY
+
+# 📌 Disney 官方网站
+DOMAIN-SUFFIX,disney.com,PROXY
+DOMAIN,www.disney.com,PROXY
+
+
+# 📌 兜底规则（确保所有 Disney+ 相关流量走代理）
+USER-AGENT,*Disney*,PROXY
+DOMAIN-KEYWORD,disney,PROXY
