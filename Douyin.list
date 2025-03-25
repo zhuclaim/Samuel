@@ -36,7 +36,13 @@ DOMAIN-SUFFIX,help.douyin.com,PROXY
 DOMAIN,wss://webcast.douyin.com,PROXY
 DOMAIN,wss://webcast.amemv.com,PROXY
 
+# 📌 抖音 IP 直连（仅适用于部分场景）
+IP-CIDR,39.96.0.0/16,PROXY
+IP-CIDR,47.242.0.0/16,PROXY
+IP-CIDR,203.107.1.1/32,PROXY
+
 # 📌 兜底规则（强制代理所有 Douyin 相关流量）
 USER-AGENT,*Douyin*,PROXY
 USER-AGENT,*Aweme*,PROXY
+
 
