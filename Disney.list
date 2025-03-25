@@ -1,3 +1,4 @@
+[Rule]
 # 📌 Disney+ 主要域名
 DOMAIN-SUFFIX,disneyplus.com,PROXY
 DOMAIN-SUFFIX,disneystreaming.com,PROXY
@@ -35,6 +36,9 @@ DOMAIN,help.disneyplus.com,PROXY
 DOMAIN-SUFFIX,disney.com,PROXY
 DOMAIN,www.disney.com,PROXY
 
+# 📌 Disney+ IP 直连（仅适用于部分场景）
+IP-CIDR,34.120.0.0/16,PROXY
+IP-CIDR,52.84.0.0/16,PROXY
 
 # 📌 兜底规则（确保所有 Disney+ 相关流量走代理）
 USER-AGENT,*Disney*,PROXY
