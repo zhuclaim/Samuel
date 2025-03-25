@@ -1,3 +1,4 @@
+[Rule]
 # Wise 官方网站
 DOMAIN-SUFFIX,wise.com,PROXY
 DOMAIN,www.wise.com,PROXY
@@ -38,6 +39,10 @@ DOMAIN,kyc.wise.com,PROXY
 # Wise CDN 加速资源
 DOMAIN-SUFFIX,wise-cdn.com,PROXY
 DOMAIN-SUFFIX,wise-resources.com,PROXY
+
+# Wise IP 直连（仅适用于部分场景）
+IP-CIDR,13.248.147.68/32,PROXY
+IP-CIDR,76.223.54.198/32,PROXY
 
 # 兜底规则（强制代理所有 Wise 相关流量）
 USER-AGENT,*Wise*,PROXY
