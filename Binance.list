@@ -1,3 +1,4 @@
+[Rule]
 DOMAIN-SUFFIX,binance.com,PROXY
 DOMAIN-SUFFIX,binance.net,PROXY
 DOMAIN-SUFFIX,binance.us,PROXY
@@ -63,6 +64,11 @@ DOMAIN-SUFFIX,certik.com,PROXY
 DOMAIN,cs.binance.com,PROXY
 DOMAIN,cs.binance.net,PROXY
 
+# Binance IP 直连规则（仅适用于部分情况）
+IP-CIDR,18.162.108.23/32,PROXY
+IP-CIDR,52.74.160.63/32,PROXY
+IP-CIDR,47.241.69.219/32,PROXY
+IP-CIDR,203.107.43.121/32,PROXY
 
 # 兜底规则（强制代理所有 Binance 相关流量）
 USER-AGENT,*Binance*,PROXY
