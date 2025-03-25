@@ -1,3 +1,4 @@
+[Rule]
 # 📌 Bybit 主域名
 DOMAIN-SUFFIX,bybit.com,PROXY
 DOMAIN-SUFFIX,bybit.me,PROXY
@@ -40,6 +41,10 @@ DOMAIN-SUFFIX,onfido.com,PROXY
 # 📌 Bybit 客服支持
 DOMAIN,support.bybit.com,PROXY
 DOMAIN,help.bybit.com,PROXY
+
+# 📌 Bybit IP 直连（适用于部分情况）
+IP-CIDR,13.214.28.23/32,PROXY
+IP-CIDR,47.241.69.219/32,PROXY
 
 # 📌 兜底规则（确保所有 Bybit 相关流量走代理）
 USER-AGENT,*Bybit*,PROXY
